@@ -5,5 +5,4 @@ __pycache__/
 munge.py
 .jekyll-metadata
 Gemfile.lock
-Gemfile
 node_modules
