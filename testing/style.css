@@ -1,4 +1,6 @@
-/* Universal Styles: */
+.section-one__title {
+  color: purple; }
+
 * {
   box-sizing: border-box; }
 

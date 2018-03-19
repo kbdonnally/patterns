@@ -1,6 +1,6 @@
 // test version - no front matter!
 
-/* Universal Styles: */
+@import "../assets/_sass/sections";
 
 * {
 	box-sizing: border-box;
@@ -13,3 +13,4 @@ body {
 	font-size: 1em;
 	line-height: 1.5; // if 16px, = 24px line height
 }
+
