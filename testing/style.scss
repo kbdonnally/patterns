@@ -1,5 +1,3 @@
-// test version - no front matter!
-
 @import "_sass/sections";
 
 * {
@@ -14,3 +12,10 @@ body {
 	line-height: 1.5; // if 16px, = 24px line height
 }
 
+/* Attribute selectors: */
+
+// section titles
+[class*="__title"] {
+	font-size: 2rem;
+	line-height: 1;
+}

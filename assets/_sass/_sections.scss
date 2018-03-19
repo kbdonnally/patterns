@@ -14,8 +14,8 @@
 		padding-left: 8.33%;
 	}
 	@media screen and (min-width: 768px) {
-		grid-template-areas: "title pics";
-		grid-template-columns: 2fr 1fr;
+		grid-template-areas: "title";
+	//	grid-template-columns: 2fr 1fr;
 	}
 	@media screen and (min-width: 900px) {
 		padding-left: 4.167%;
@@ -52,11 +52,22 @@
 }
 
 .sections-title__text {
-
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: -4px;
+		left: 0;
+		display: block;
+		height: 4px;
+		width: 100vw;
+		background-color: cyan;
+	}
 }
 
 .sections-landing__subtitle {
-
+	position: relative;
+	color: white;
 }
 
 .sections-main-content {
