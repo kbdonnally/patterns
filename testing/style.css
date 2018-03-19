@@ -81,10 +81,13 @@
       padding-top: 1em; } }
 
 [class*="__title"][class*="section-"] {
-  margin-bottom: 1em;
+  margin-bottom: 1.5rem;
   font-size: 2rem;
   line-height: 1;
   font-weight: 700; }
+
+[class*="sections__"] {
+  padding-bottom: 1em; }
 
 .sections__one {
   grid-area: one; }
