@@ -26,19 +26,13 @@ github_username:  kbdonnally
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: assets/css/_sass
+  style: expanded # temporary! change back to compressed later
 plugins:
   - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
+  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
-  - testing/
-
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - testing
