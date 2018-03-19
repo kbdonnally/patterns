@@ -33,7 +33,8 @@ def createGridAreas(sections):
 def classesToCSS(class_names):
 	css = []
 	for i, c in enumerate(class_names):
-		if '__' in c:
+	# limits to just main content interior:
+	#	if '__' in c:
 			selector = '''.{0} {{\n\n}}\n'''.format(c)
 			css.append(selector)
 	return css
