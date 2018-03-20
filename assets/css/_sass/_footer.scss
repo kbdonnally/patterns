@@ -3,11 +3,18 @@
 }
 
 .footer-main-grid {
-
+	position: relative;
+	display: grid;
+	grid-template-areas: ".... logos top"
+						 "site contact connect";
+	grid-auto-rows: minmax(25vh, auto);
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer__logos {
+/* Logos: */
 
+.footer__logos {
+	grid-area: logos;
 }
 
 .footer-logo__slab {
@@ -18,16 +25,20 @@
 
 }
 
-.footer__to-top {
+/* To Top: */
 
+.footer__to-top {
+	grid-area: top;
 }
 
 .footer-top__wrapper {
 
 }
 
-.footer__sitemap {
+/* Site Links: */
 
+.footer__sitemap {
+	grid-area: site;
 }
 
 .footer-map__title {
@@ -38,8 +49,10 @@
 
 }
 
-.footer__contact {
+/* Contact: */
 
+.footer__contact {
+	grid-area: contact;
 }
 
 .footer-contact__email {
@@ -58,8 +71,10 @@
 
 }
 
-.footer__connect {
+/* Connect: */
 
+.footer__connect {
+	grid-area: connect;
 }
 
 .footer-connect__social {
