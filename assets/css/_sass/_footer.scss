@@ -53,20 +53,21 @@
 
 .footer__to-top {
 	grid-area: top;
-	
 	a {
 		position: relative;
 		display: flex;
 		flex-flow: column nowrap;
 		align-items: center;
+		text-transform: uppercase;
+		text-align: center;
+		img {
+			height: 1.5em;
+		}
+		span {
+			margin-top: .5em;
+			line-height: 1;
+		}
 	}
-	img {
-		height: 1.5em;
-	}
-}
-
-.footer-top__wrapper {
-
 }
 
 /* Site Links: */
