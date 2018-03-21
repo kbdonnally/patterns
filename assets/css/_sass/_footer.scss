@@ -15,11 +15,12 @@
 .footer-main-grid {
 	position: relative;
 	display: grid;
-	grid-template-areas: ".... logos top"
-						 "site contact connect";
+	grid-template-areas: "top top top top"
+						 "site connect connect contact"
+						 "logos logos logos logos";
 	grid-auto-rows: minmax(25vh, auto);
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 4.167%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+//	grid-gap: 4.167%;
 	justify-content: center;
 }
 
@@ -104,6 +105,7 @@
 }
 
 .footer-contact__email {
+	display: none;
 
 }
 
@@ -126,7 +128,9 @@
 }
 
 .footer-connect__social {
-
+	img {
+		height: 2rem;
+	}
 }
 
 .footer-social__fb {
