@@ -1,6 +1,7 @@
 [class*="footer"] {
 	a {
 		text-decoration: none;
+	//	color: black;
 	}
 }
 
@@ -128,6 +129,13 @@
 }
 
 .footer-connect__social {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid black;
+	div {
+		display: inline-block;
+	}
 	img {
 		height: 2rem;
 	}
