@@ -53,6 +53,8 @@
 	}
 }
 
+/* Page Type: */
+
 .item__page-type {
 	grid-area: type;
 	justify-self: center;
@@ -64,6 +66,8 @@
 	text-transform: uppercase;
 	line-height: 1;
 }
+
+/* Item Title: */
 
 .item__big-title {
 	grid-area: title;
@@ -80,6 +84,8 @@
 
 }
 
+/* Description: */
+
 .item__description {
 	grid-area: describe;
 }
@@ -91,6 +97,8 @@
 .item-describe__text {
 
 }
+
+/* Stats: */
 
 .item__stats-box {
 	grid-area: stats;
@@ -116,6 +124,8 @@
 		color: cyan;
 	}
 }
+
+/* Button: */
 
 .item__cta {
 	grid-area: button;
