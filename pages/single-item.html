@@ -1,0 +1,40 @@
+---
+layout: no-header
+title: Single Item
+permalink: /single-item/
+---
+
+<div class="item-main-content" aria-label="Main content">
+
+	<div class="item__page-type">Single Item</div>
+
+	<div class="item__big-title">
+		<div class="item-title__title">Title of item</div>
+		<div class="item-title__text">E.g. name, event, etc.</div>
+	</div>
+
+	<div class="item__img">
+		<img src="{{ '/assets/img/scholarslab.png' | relative_url }}" alt="Twitter icon">
+	</div>
+
+	<div class="item__description">
+		<div class="item-describe__title">Description</div>
+		<div class="item-describe__text">Text content of description. Blah blah blah.<br/><br/>This is probably in Markdown as a layout for the SLab site.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non iaculis enim, et porta lectus. Duis non quam ornare, euismod leo nec, posuere mauris. Pellentesque sed varius ipsum, luctus pharetra nibh. Vestibulum ante sapien, posuere non metus sed, eleifend vulputate lorem. Vivamus elementum mollis turpis.</div>
+	</div>
+
+	<div class="item__stats"> <!-- using components/stats-box.scss -->
+		<div class="item-stats__box">
+			<div>Stats Box Title</div>
+			<span>Stat 1:</span>Value<br/>
+			<span>Stat 2:</span>Value<br/>
+			<span>Stat 3:</span>Value<br/>
+			<span>Stat 4:</span>Value
+		</div>
+	</div>
+
+	<!-- insert any additional info, like a list of all posts by a certain person. 
+		 This is just a boilerplate model. -->
+
+	<div class="item__cta"><a href="#">&lsaquo; See All</a></div> <!-- using components/link-button.scss -->
+
+</div>
