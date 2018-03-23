@@ -2,7 +2,7 @@
 
 ## Issue Label Reference
 
-*To set up a new document with current configuration:*
+*To set up a new repo with current configuration:*
 
 Name | HEX Code
 ---- | --------
