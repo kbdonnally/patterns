@@ -36,6 +36,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - testing
+  - docs
 
 defaults:
   - scope:
