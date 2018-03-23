@@ -5,7 +5,15 @@ permalink: /text/
 # test vars:
 post-title: Text-Based Page, Like a Blog Post
 author: Katherine Donnally
-categories: tutorials, ice cream, dogs
+categories: 
+- tutorials
+- ice cream
+- dogs
+# punchy quote or sentence-ish summary of article.
+# (Gives little preview for readers who aren't sure whether to
+# delve in based on the title alone, or as another hook for
+# something that might've been too long for the title.)
+punchy-quote: Text content of section two. Blah blah blah. Donec molestie fermentum lorem eu laoreet.
 ---
 
 <div class="text-main-content" aria-label="Main content">
@@ -14,9 +22,16 @@ categories: tutorials, ice cream, dogs
 
 	<div class="text__metadata">
 		<div class="text-meta__title">{{ page.post-title }}</div>
-		<div class="text-meta__author">{{ page.author }}</div>
-		<div class="text-meta__date">{{ site.time | date: "%B %d, %Y" }}</div>
-		<div class="text-meta__categories">Create categories loop here!</div>
+		<div class="text-meta__author">By <a href="#">{{ page.author }}</a></div>
+		<div class="text-meta__date">Posted {{ site.time | date: "%B %d, %Y" }}</div>
+		<div class="text-meta__categories">Filed under:
+			{% for c in page.categories %}
+			{% assign last = page.categories | last %}
+			{% if c == last %} <a href="#">{{ c }}</a>
+			{% else %} <a href="#">{{ c }}</a>,
+			{% endif %}{% endfor %}
+		</div>
+		<div class="text-meta__categories">&ldquo;{{ page.punchy-quote }}&rdquo;</div>
 	</div>
 
 	<div class="text__content">
