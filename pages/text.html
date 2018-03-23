@@ -22,6 +22,7 @@ punchy-quote: Text content of section two. Blah blah blah. Donec molestie fermen
 
 	<div class="text__metadata">
 		<div class="text-meta__title">{{ page.post-title }}</div>
+		<div class="text-meta__categories">&ldquo;{{ page.punchy-quote }}&rdquo;</div>
 		<div class="text-meta__author">By <a href="#">{{ page.author }}</a></div>
 		<div class="text-meta__date">Posted {{ site.time | date: "%B %d, %Y" }}</div>
 		<div class="text-meta__categories">Filed under:
@@ -31,7 +32,6 @@ punchy-quote: Text content of section two. Blah blah blah. Donec molestie fermen
 			{% else %} <a href="#">{{ c }}</a>,
 			{% endif %}{% endfor %}
 		</div>
-		<div class="text-meta__categories">&ldquo;{{ page.punchy-quote }}&rdquo;</div>
 	</div>
 
 	<div class="text__content">
