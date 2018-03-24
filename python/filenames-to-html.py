@@ -3,20 +3,34 @@
 
 # FUNCTIONS:
 
+# write HTML to string, strip all whitespace
+def textToString(file):
+	with open(file, 'rt') as myfile:
+		html = myfile.read()
+		string = html.strip().replace('\n', '').replace(' ', '')
+		return string
+
 # using regex to search and grab
-def regexTextSearch(file, pattern):
+def regexTextSearch(html, pattern):
 	import re
 
-	with open(file, 'rt') as myfile:
-		matches = re.findall(pattern, myfile.read())
-		return matches
+	matches = re.findall(pattern, html)
+	return matches
+
+# create or open file & write to it
+def writeToFile(file, list):
+	with open(file, 'wt') as myfile:
+		for l in list:
+			myfile.write(l + '\n')
 
 # CALLS:
 
-# match string s where s == 'class="<val>"'
-pattern = r'class=".*?"'
+html = textToString('research.html')
+# print(html_string[1000:2000])
+
+# match string s where s == '<li<val></li>'
+pattern = r'<li>.*?</li>'
 
 # list of all 'class="<val>"' in file
-matches = regexTextSearch('research.html', pattern)
-
+matches = regexTextSearch(html, pattern)
 print(matches)
