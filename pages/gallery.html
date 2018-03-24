@@ -14,7 +14,7 @@ permalink: /logos/
 <div class="logo-testing__gallery">
 	{% for pic in logo_pics reversed %}
 	<div class="logo-gallery__item">
-		<img class="logo-item__img" src="{{ pic.path }}" alt="test">
+		<img class="logo-item__img" src="{{ pic.path | relative_url }}" alt="test">
 		<span class="logo-item__title">Sketch {{ logo_pics.size | minus:forloop.index0 }}</span>
 	</div>
 	{% endfor %}
