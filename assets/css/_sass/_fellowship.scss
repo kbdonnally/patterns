@@ -1,4 +1,7 @@
-/* Universal item page styles: */
+/* Universal fellowship page styles: */
+
+// site theme blue
+$blue: rgba(0,47,255,.8);
 
 // section titles
 [class*="__title"][class*="fellow-"] {
@@ -12,6 +15,24 @@
 		font-size: 2rem;
 	}
 }
+
+// links
+[class*="fellow-"], [class*="fellowship"] {
+	a {
+		font-family: "base-mono-narrow", monospace;
+		text-decoration: none;
+		color: black;
+		border-bottom: 2px solid $blue;
+		background-color: transparent;
+		-webkit-transition: background-color .3s;
+		transition: background-color .3s;
+		&:hover, &:focus {
+			background-color: $blue;
+		}
+	}
+}
+
+/* Main Fellowship Styles: */
 
 .fellowship-main-content {
 	position: relative;
@@ -28,6 +49,8 @@
 	display: none;
 }
 
+/* Title: */
+
 .fellowship__big-title {
 	grid-area: title;
 	margin-bottom: .5em;
@@ -37,13 +60,19 @@
 //	text-transform: uppercase;
 }
 
+/* Due date: */
+
 .fellowship__due-date {
 	grid-area: due;
 }
 
+/* Main Content: */
+
 .fellowship__content {
 	grid-area: content;
 }
+
+/* Description: */
 
 .fellow-content__description {
 
@@ -57,6 +86,8 @@
 
 }
 
+/* Eligibility: */
+
 .fellow-content__eligible {
 
 }
@@ -69,6 +100,8 @@
 
 }
 
+/* How to Apply: */
+
 .fellow-content__apply {
 
 }
@@ -80,6 +113,8 @@
 .fellow-apply__text {
 
 }
+
+/* Questions: */
 
 .fellowship__questions {
 	grid-area: questions;
