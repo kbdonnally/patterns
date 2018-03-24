@@ -1,3 +1,18 @@
+/* Universal item page styles: */
+
+// section titles
+[class*="__title"][class*="fellow-"] {
+	margin-bottom: .5em;
+	margin-top: 1em;
+	font-size: 1.75rem;
+	font-weight: 900;
+	line-height: 1;
+	text-transform: uppercase;
+	@media screen and (min-width: 600px) {
+		font-size: 2rem;
+	}
+}
+
 .fellowship-main-content {
 	position: relative;
 	display: grid;
@@ -10,10 +25,16 @@
 
 .fellowship__page-type {
 	grid-area: type;
+	display: none;
 }
 
-.fellowship__title {
+.fellowship__big-title {
 	grid-area: title;
+	margin-bottom: .5em;
+	margin-top: 1em;
+	font-size: 3rem;
+	font-weight: 900;
+//	text-transform: uppercase;
 }
 
 .fellowship__due-date {
