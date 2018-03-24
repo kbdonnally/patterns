@@ -37,6 +37,7 @@ exclude:
   - Gemfile.lock
   - testing
   - docs
+  - python
 
 defaults:
   - scope:
