@@ -1,7 +1,7 @@
 # filenames-to-html.py
 # match images w/ project titles
 
-# FUNCTIONS:
+################### FUNCTIONS: #############
 
 # write HTML to string, strip all whitespace
 def textToString(file):
@@ -17,20 +17,56 @@ def regexTextSearch(html, pattern):
 	matches = re.findall(pattern, html)
 	return matches
 
-# create or open file & write to it
-def writeToFile(file, list):
-	with open(file, 'wt') as myfile:
-		for l in list:
-			myfile.write(l + '\n')
+# use only <li> that contain <img>
+def filterByContent(matches):
+	ul = [m for m in matches if 'img' in m]
+	return ul
 
-# CALLS:
+# take each <li> -> return <img> src attribute
+def grabImageSource(ul):
+	import re
 
+	sources = []
+	for li in ul:
+		result = re.findall(r'src=".*?"', li)
+		sources.append(result[0])
+	return sources
+
+# take each <li> -> return title of project
+def grabProjectTitles(ul):
+	import re
+
+	sources = []
+	for li in ul:
+		result = re.findall(r'src=".*?"', li)
+		sources.append(result[0])
+	return sources
+
+# split at all '/', take last section, remove endquote -> filename.ext
+def srcToFileName(src_list):
+	filenames = []
+	for s in src_list:
+		filename = s.split('/')[-1].replace('"', '')
+		filenames.append(filename)
+	return filenames
+
+################## CALLS: ##################
+
+# take HTML file -> output as string w/ no whitespace
 html = textToString('research.html')
-# print(html_string[1000:2000])
 
 # match string s where s == '<li<val></li>'
 pattern = r'<li>.*?</li>'
 
-# list of all 'class="<val>"' in file
+# list of all <li> elements in file
 matches = regexTextSearch(html, pattern)
-print(matches)
+
+# list of all <li> w/ images in file
+ul = filterByContent(matches)
+
+# list of 'src' attribute in each <li>
+src_list = grabImageSource(ul)
+
+# 'filename.ext' per <img> in <li>
+filenames = srcToFileName(src_list)
+print(filenames)
