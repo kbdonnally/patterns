@@ -16,8 +16,8 @@ $blue: rgba(0,47,255,.8);
 	}
 }
 
-// links
 [class*="fellow-"], [class*="fellowship"] {
+	// links
 	a {
 		font-family: "base-mono-narrow", monospace;
 		text-decoration: none;
@@ -30,6 +30,16 @@ $blue: rgba(0,47,255,.8);
 			background-color: $blue;
 		}
 	}
+	// paragraphs
+	p {
+		line-height: 1.5;
+		margin: 1em 0;
+		padding: 0;
+	}
+	// bolded text
+	strong {
+		font-family: "base-mono-narrow";
+	}
 }
 
 /* Main Fellowship Styles: */
@@ -41,6 +51,11 @@ $blue: rgba(0,47,255,.8);
 	padding: 1em 4.167%;
 	@media screen and (min-width: 600px) {
 		padding: 1em 8.33%;
+	}
+	/* ADD TO ALL MAIN CONTENT DEFS: */
+	@media screen and (min-width: 1200px) {
+		max-width: calc(1000px + 16.67%);
+		margin: 0 auto;
 	}
 }
 
@@ -55,9 +70,16 @@ $blue: rgba(0,47,255,.8);
 	grid-area: title;
 	margin-bottom: .5em;
 	margin-top: 1em;
-	font-size: 3rem;
+	font-size: 2.25rem;
 	font-weight: 900;
+	line-height: 1;
 //	text-transform: uppercase;
+	@media screen and (min-width: 600px) {
+		font-size: 2.75rem;
+	}
+	@media screen and (min-width: 768px) {
+		font-size: 3rem;
+	}
 }
 
 /* Due date: */
@@ -114,10 +136,29 @@ $blue: rgba(0,47,255,.8);
 	position: relative;
 	ul {
 		position: relative;
+		margin: 0;
+		padding: 0 0 0 2em; // left padding only
+		list-style-type: none;
 		font-family: "base-mono-narrow", monospace;
-	
+		li {
+			position: relative;
+			margin-bottom: 1em;
+			line-height: 1;
+			/* NB: center of dot = 1rem from <li> */
+			&::before {
+				content: '';
+				position: absolute;
+				left: -4px;
+				top: calc(.5em - 1px);
+				display: block;
+				height: 6px;
+				width: 6px;
+				background-color: $blue;
+				border-radius: 50%;
+				transform: translate(-.5em, -25%);
+			}
+		}
 	}
-
 }
 
 /* Questions: */
