@@ -111,6 +111,12 @@ $blue: rgba(0,47,255,.8);
 }
 
 .fellow-apply__text {
+	position: relative;
+	ul {
+		position: relative;
+		font-family: "base-mono-narrow", monospace;
+	
+	}
 
 }
 
