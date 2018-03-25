@@ -38,6 +38,10 @@ exclude:
   - testing
   - docs
   - python
+collections:
+  research:
+    output: true
+    permalink: /:collection/:name/
 
 defaults:
   - scope:
