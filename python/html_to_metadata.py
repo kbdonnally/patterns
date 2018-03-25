@@ -89,11 +89,6 @@ titles = grabProjectTitles(ul)
 # 'project-slug' per 'href' in <li> <a>
 slugs = grabProjectSlugs(ul)
 
-# ('title: val', 'filename: val', 'slug: val') per project
-tuples = [('title: ' + title, 'filename: ' + file, 'slug: ' + slug) for 
-			title, file, slug in zip(titles, filenames, slugs)]
-
-def tuplesToYAML(tuples):
 '''
 desired format:
 {slug}.md ->
@@ -103,3 +98,19 @@ slug: {slug}
 title: {title}
 preview-img: {filename}
 '''
+
+# ('title: val', 'filename: val', 'slug: val') per project
+tuples = [(title, file, slug) for 
+			title, file, slug in zip(titles, filenames, slugs)]
+
+def tuplesToYAML(tuples):
+	yamls = []
+	for (title, file, slug) in tuples:
+		yaml = '''---\nlayout: research\nslug: {slug}\ntitle: {title}\npreview-img: {file}\n'''.format(title=title, file=file, slug=slug)
+		yamls.append(yaml)
+	return yamls
+
+yamls = tuplesToYAML(tuples)
+
+# for yaml in yamls:
+#	print(yaml)

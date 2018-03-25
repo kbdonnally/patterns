@@ -1,4 +1,11 @@
+# write-to-file.py
 # create or open file & write to it
+
+import html_to_metadata as html
+
+yamls = html.yamls
+for yaml in yamls:
+	print(yaml)
 
 def writeToFile(file, list):
 	with open(file, 'at') as myfile:
