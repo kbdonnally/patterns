@@ -8,9 +8,28 @@ title: Research
 	{% for page in site.research %}
 		<div class="project">
 			<a href="{{ site.url }}/research/{{ page.slug }}">
+				<!-- want 'example.png' -> {{ page.filename }} -->
 				<img src="{{ site.url }}/assets/img/example.png" alt="{{ page.title }}">
 				<div class="research-caption">{{ page.title }}</div>
 			</a>
 		</div>
 	{% endfor %}
 </div>
+
+<!-- from person page: -->
+<!--
+{% for person in staff %}
+  <a href="{{ site.url }}/people/{{ person.slug }}">
+    {% assign profile_pictures = site.static_files | where: "basename",person.slug | limit: 1 %}
+    {% if profile_pictures == empty %}
+        <div class="image"><img src="{{ site.baseurl }}/assets/img/people/scholarslab.png" alt="Scholars' Lab Lab"></div>
+    {% else %}
+        {% for profile_picture in profile_pictures %}
+          <div class="image"><img src="{{ profile_picture.path }}" alt="{{ person.name }}"></div>
+        {% endfor %}
+    {% endif %}
+  <span class="fn name">{{ person.name }}</span>
+  <span class="title">{{ person.position }}</span>
+  </a>
+{% endfor %}
+-->
