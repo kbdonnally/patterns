@@ -21,7 +21,7 @@
 }
 
 // 'big-' -> attr selector on '__title'
-.collection-landing__big-title {
+.collect-landing__big-title {
 	grid-area: title;
 	align-self: end;
 	position: relative;
@@ -30,7 +30,7 @@
 	justify-content: start;	
 }
 
-.collection-title__text {
+.collect-title__text {
 	position: relative;
 	margin-top: 1em;
 	font-family: "Oswald", sans-serif;
@@ -59,7 +59,7 @@
 	}
 }
 
-.collection-landing__subtitle {
+.collect-landing__subtitle {
 	grid-area: subtitle;
 	align-self: start;
 	position: relative;
