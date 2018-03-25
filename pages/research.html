@@ -9,12 +9,17 @@ title: Research
 		<div class="project">
 			<a href="{{ site.url }}/research/{{ page.slug }}">
 				<!-- want 'example.png' -> {{ page.filename }} -->
-				<img src="{{ site.url }}/assets/img/example.png" alt="{{ page.title }}">
+				<img src="{{ '/assets/img/research/' | append: page.preview-img | relative_url }}" alt="{{ page.title }}">
 				<div class="research-caption">{{ page.title }}</div>
 			</a>
 		</div>
 	{% endfor %}
 </div>
+
+<!-- {% assign logo_pics = site.static_files | where_exp: "item", "item.path contains 'research'" %} -->
+
+<!-- from item page: -->
+<!-- <img src="{{ '/assets/img/scholarslab.png' | relative_url }}" alt="Twitter icon"> -->
 
 <!-- from person page: -->
 <!--
