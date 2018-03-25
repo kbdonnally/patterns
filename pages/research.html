@@ -7,7 +7,7 @@ title: Research
 <div id="lab-grid">
 	{% for page in site.research %}
 		<div class="project">
-			<a href="{{ site.url }}/research/{{ page.slug }}">
+			<a href="{{ site.baseurl }}/research/{{ page.slug }}">
 				<!-- want 'example.png' -> {{ page.filename }} -->
 				<img src="{{ '/assets/img/research/' | append: page.preview-img | relative_url }}" alt="{{ page.title }}">
 				<div class="research-caption">{{ page.title }}</div>
