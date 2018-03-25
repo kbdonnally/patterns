@@ -3,11 +3,11 @@
 
 ################### FUNCTIONS: #############
 
-# write HTML to string, strip all whitespace
+# write HTML to string, strip excess whitespace
 def textToString(file):
 	with open(file, 'rt') as myfile:
 		html = myfile.read()
-		string = html.strip().replace('\n', '').replace(' ', '')
+		string = html.strip().replace('\n', '')
 		return string
 
 # using regex to search and grab
@@ -32,16 +32,6 @@ def grabImageSource(ul):
 		sources.append(result[0])
 	return sources
 
-# take each <li> -> return title of project
-def grabProjectTitles(ul):
-	import re
-
-	sources = []
-	for li in ul:
-		result = re.findall(r'src=".*?"', li)
-		sources.append(result[0])
-	return sources
-
 # split at all '/', take last section, remove endquote -> filename.ext
 def srcToFileName(src_list):
 	filenames = []
@@ -50,9 +40,31 @@ def srcToFileName(src_list):
 		filenames.append(filename)
 	return filenames
 
+# take each <li> -> return title of project
+def grabProjectTitles(ul):
+	import re
+
+	titles = []
+	for li in ul:
+		result = re.findall(r'<h2>.*?<', li)
+		title = result[0].split('>')[1].replace('<', '')
+		titles.append(title)
+	return titles
+
+# take each <li> -> return title of project
+def grabProjectSlugs(ul):
+	import re
+
+	slugs = []
+	for li in ul:
+		result = re.findall(r'href=".*?"', li)
+		slug = result[0].split('/')[-2]
+		slugs.append(slug)
+	return slugs
+
 ################## CALLS: ##################
 
-# take HTML file -> output as string w/ no whitespace
+# take HTML file -> strip excess whitespace -> return string
 html = textToString('research.html')
 
 # match string s where s == '<li<val></li>'
@@ -69,4 +81,10 @@ src_list = grabImageSource(ul)
 
 # 'filename.ext' per <img> in <li>
 filenames = srcToFileName(src_list)
-print(filenames)
+# print(filenames)
+
+titles = grabProjectTitles(ul)
+# print(titles)
+
+slugs = grabProjectSlugs(ul)
+print(slugs)
