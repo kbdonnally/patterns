@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: for-better-for-verse
-title: For Better for Verse
-preview-img: forbetterforverse.jpg
+slug: spatial-search-and-delivery
+title: Spatial Humanities
+preview-img: spatialhumanities1.jpg
 research-category:
 - Internal Projects and Community Service
 ---

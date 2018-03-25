@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: the-mind-is-a-metaphor
-title: The Mind is a Metaphor
-preview-img: mindmetaphor.jpg
+slug: neatline
+title: Neatline
+preview-img: neatline1.jpg
 research-category:
 - Internal Projects and Community Service
 ---

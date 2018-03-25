@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: collective-biographies-of-women
-title: Collective Biographies of Women
-preview-img: collectivebios.jpg
+slug: solrmarc
+title: Solrmarc
+preview-img: RooshInf3ktion-solrmarc.png
 research-category:
 - Internal Projects and Community Service
 ---

@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: speaking-in-code
-title: Speaking In Code
-preview-img: speakingincodescreengrab.png
+slug: mapping-the-catalogue-of-ships
+title: Mapping the Catalogue of Ships
+preview-img: catalogofships.jpg
 research-category:
 - Scholarly Collaborations
 ---

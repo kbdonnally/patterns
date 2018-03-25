@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: praxis-program
-title: Praxis Program
-preview-img: praxis.png
+slug: faulkner-at-virginia-an-audio-archive
+title: Faulkner at Virginia: An Audio Archive
+preview-img: faulkner.jpg
 research-category:
 - Scholarly Collaborations
 ---

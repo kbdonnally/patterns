@@ -1,10 +1,6 @@
 ---
-collaborators: ''
-current: true
-layout: research
-link: 'http://scholarslab.org'
 slug: the_scholars_lab
-title: "The Scholars' Lab"
+title: The Scholars' Lab
 research-category:
 - Internal Projects and Community Service
 ---

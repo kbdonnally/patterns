@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: jeffersons-notes-on-the-state-of-virginia
-title: Jefferson &#8217;s Notes on the State of Virginia
-preview-img: jefferson-flipped.jpg
+slug: the-falmouth-project
+title: The Falmouth Project
+preview-img: falmouth.jpg
 research-category:
 - Scholarly Collaborations
 ---

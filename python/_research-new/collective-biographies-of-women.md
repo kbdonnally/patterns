@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: omeka-plugins
-title: Omeka Plugins
-preview-img: omeka-plugins2.png
+slug: collective-biographies-of-women
+title: Collective Biographies of Women
+preview-img: collectivebios.jpg
 research-category:
 - Scholarly Collaborations
 ---

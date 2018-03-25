@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: faulkner-at-virginia-an-audio-archive
-title: Faulkner at Virginia: An Audio Archive
-preview-img: faulkner.jpg
+slug: project-blacklight
+title: Project Blacklight
+preview-img: blacklight.jpg
 research-category:
 - Internal Projects and Community Service
 ---

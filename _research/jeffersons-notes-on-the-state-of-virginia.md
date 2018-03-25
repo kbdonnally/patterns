@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: project-blacklight
-title: Project Blacklight
-preview-img: blacklight.jpg
+slug: jeffersons-notes-on-the-state-of-virginia
+title: Jefferson &#8217;s Notes on the State of Virginia
+preview-img: jefferson-flipped.jpg
 research-category:
 - Scholarly Collaborations
 ---

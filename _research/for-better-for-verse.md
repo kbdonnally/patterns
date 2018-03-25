@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: neatline
-title: Neatline
-preview-img: neatline1.jpg
+slug: for-better-for-verse
+title: For Better for Verse
+preview-img: forbetterforverse.jpg
 research-category:
 - Scholarly Collaborations
 ---

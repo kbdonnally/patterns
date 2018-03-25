@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: the-falmouth-project
-title: The Falmouth Project
-preview-img: falmouth.jpg
+slug: praxis-program
+title: Praxis Program
+preview-img: praxis.png
 research-category:
 - Internal Projects and Community Service
 ---

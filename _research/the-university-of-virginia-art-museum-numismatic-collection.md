@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: presidents-commission-on-slavery-and-the-university
-title: President &#8217;s Commission on Slavery and the University
-preview-img: slaveryUVa-header.png
+slug: the-mind-is-a-metaphor
+title: The Mind is a Metaphor
+preview-img: mindmetaphor.jpg
 research-category:
 - Scholarly Collaborations
 ---

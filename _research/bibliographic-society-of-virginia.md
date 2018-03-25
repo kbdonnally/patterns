@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: spatial-search-and-delivery
-title: Spatial Humanities
-preview-img: spatialhumanities1.jpg
+slug: bibliographic-society-of-virginia
+title: Bibliographic Society of Virginia
+preview-img: bsuva.png
 research-category:
 - Scholarly Collaborations
 ---

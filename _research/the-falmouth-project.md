@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: latvian-dainas
-title: Latvian Dainas
-preview-img: latvian-dainas.png
+slug: thl-place-dictionary
+title: THL Place Dictionary
+preview-img: thlplace.jpg
 research-category:
 - Scholarly Collaborations
 ---

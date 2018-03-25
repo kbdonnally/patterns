@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: the-university-of-virginia-art-museum-numismatic-collection
-title: The University of Virginia Art Museum Numismatic Collection
-preview-img: coins.jpg
+slug: omeka-plugins
+title: Omeka Plugins
+preview-img: omeka-plugins2.png
 research-category:
 - Internal Projects and Community Service
 ---

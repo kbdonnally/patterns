@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: salem-witch-trials
-title: Salem Witch Trials
-preview-img: salemwitchtrials.jpg
+slug: presidents-commission-on-slavery-and-the-university
+title: President &#8217;s Commission on Slavery and the University
+preview-img: slaveryUVa-header.png
 research-category:
 - Scholarly Collaborations
 ---

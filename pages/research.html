@@ -15,7 +15,7 @@ title: Research
 
 <div class="research-main-content" aria-label="Main content">
   <div class="research-items-wrapper">
-
+ <!--   {% assign research = site.research | sort %} -->
     {% for page in site.research %}
     <div class="research__item">
       <a href="{{ site.baseurl }}/research/{{ page.slug }}" aria-label="{{ page.title }}">

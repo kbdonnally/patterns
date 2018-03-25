@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: thl-place-dictionary
-title: THL Place Dictionary
-preview-img: thlplace.jpg
+slug: the-university-of-virginia-art-museum-numismatic-collection
+title: The University of Virginia Art Museum Numismatic Collection
+preview-img: coins.jpg
 research-category:
 - Scholarly Collaborations
 ---

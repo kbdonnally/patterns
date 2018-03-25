@@ -1,8 +1,8 @@
 ---
 layout: research
-slug: thl-place-dictionary
-title: THL Place Dictionary
-preview-img: thlplace.jpg
+slug: salem-witch-trials
+title: Salem Witch Trials
+preview-img: salemwitchtrials.jpg
 research-category:
 - Scholarly Collaborations
 ---
