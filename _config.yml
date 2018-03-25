@@ -37,6 +37,11 @@ exclude:
   - Gemfile.lock
   - testing
   - docs
+  - python
+collections:
+  research:
+    output: true
+    permalink: /:collection/:title/
 
 defaults:
   - scope:
