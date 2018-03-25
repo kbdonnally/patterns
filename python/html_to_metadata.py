@@ -102,6 +102,7 @@ preview-img: {filename}
 # ('title: val', 'filename: val', 'slug: val') per project
 tuples = [(title, file, slug) for 
 			title, file, slug in zip(titles, filenames, slugs)]
+tuples.sort()
 
 def tuplesToYAML(tuples):
 	yamls = []

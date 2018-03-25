@@ -42,6 +42,7 @@ def writeToNewFile(filtered, filenames):
 
 # list of filenames like 'projectname.md'
 project_names = os.listdir('_research')
+project_names.sort()
 
 # prepend names w/ directory
 filepaths = ['_research/' + project for project in project_names]
