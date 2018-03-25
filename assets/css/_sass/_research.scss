@@ -1,3 +1,7 @@
+/* Research Project Page */
+
+/* Landing: */
+
 .research-landing-wrapper {
 	position: relative;
 	display: grid;
@@ -78,6 +82,8 @@
 	}
 }
 
+/* Main Content: */
+
 .research-main-content {
 	position: relative;
 	padding: 1em 4.167%;
@@ -91,12 +97,16 @@
 	}
 }
 
+/* Grid for items: */
+
 .research-items-wrapper {
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-auto-rows: minmax(300px, 1fr);
 }
+
+/* Items: */
 
 .research__item {
 	position: relative;
