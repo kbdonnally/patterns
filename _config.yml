@@ -41,7 +41,7 @@ exclude:
 collections:
   research:
     output: true
-    permalink: /:collection/:name/
+    permalink: /:collection/:title/
 
 defaults:
   - scope:
