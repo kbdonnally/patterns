@@ -12,3 +12,11 @@ def regexTextSearch(file, pattern):
 # example pattern:
 # match string s where s == 'class="<val>"'
 pattern = r'class=".*?"'
+
+# create & write, or append if exists
+# files = list of filenames
+# add = list of strings to append
+def addToFiles(files, add):
+	for file, a in zip(files, add):
+		with open(file + '.md', 'at') as myfile:
+			myfile.write(a)
