@@ -83,8 +83,23 @@ src_list = grabImageSource(ul)
 filenames = srcToFileName(src_list)
 # print(filenames)
 
+# 'Title of Project' per <h2> in <li>
 titles = grabProjectTitles(ul)
-# print(titles)
 
+# 'project-slug' per 'href' in <li> <a>
 slugs = grabProjectSlugs(ul)
-print(slugs)
+
+# ('title: val', 'filename: val', 'slug: val') per project
+tuples = [('title: ' + title, 'filename: ' + file, 'slug: ' + slug) for 
+			title, file, slug in zip(titles, filenames, slugs)]
+
+def tuplesToYAML(tuples):
+'''
+desired format:
+{slug}.md ->
+
+layout: research
+slug: {slug}
+title: {title}
+preview-img: {filename}
+'''
