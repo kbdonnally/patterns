@@ -3,8 +3,7 @@ layout: research
 slug: jeffersons-notes-on-the-state-of-virginia
 title: Jefferson &#8217;s Notes on the State of Virginia
 preview-img: jefferson-flipped.jpg
-research-category:
-- Scholarly Collaborations
+research-category: Scholarly Collaborations
 ---
 
 [Notes on the State of Virginia](http://jefferson-notes.org/) was created by Brad Pasanek and John O'Brien of the UVa English Department. The Notes project enables critical comparison and analysis of two versions of Thomas Jefferson's Notes on the State of Virginia. 
