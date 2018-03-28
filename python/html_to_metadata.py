@@ -7,14 +7,14 @@
 def textToString(file):
 	with open(file, 'rt', encoding='utf-8') as myfile:
 		html = myfile.read()
-		string = html.strip().replace('\n', '')
+		string = html.strip().replace('\n', '').replace('\t', '')
 		return string
 
 # using regex to search and grab
 def regexTextSearch(html, pattern):
 	import re
 
-	matches = re.findall(pattern, html)
+	matches = re.findall(pattern, html, re.DOTALL)
 	return matches
 
 # use only <li> that contain <img>
