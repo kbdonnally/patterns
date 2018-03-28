@@ -5,7 +5,7 @@
 
 # write HTML to string, strip excess whitespace
 def textToString(file):
-	with open(file, 'rt') as myfile:
+	with open(file, 'rt', encoding='utf-8') as myfile:
 		html = myfile.read()
 		string = html.strip().replace('\n', '')
 		return string
