@@ -17,12 +17,12 @@ permalink: /events/
 	{% for page in site.events %}
 	  <!-- project preview: -->
 	  <div class="events__item">
-	    <a href="{{ site.baseurl }}/events/{{ page.title | slugify }}" aria-label="{{ page.title }}">
+	    <a href="{{ site.baseurl }}/{{ page.url }}" aria-label="{{ page.title }}">
 	      <!--div class="events-item__img">
 	        <img src="{{ '/assets/img/events/' | append: page.preview-img | relative_url }}" alt="{{ page.title }}">
 	      </div-->
 	      <div class="events-item__title">{{ page.title }}</div>
-	      <div class="events-item__date">{{ page.date }}</div>
+	      <div class="events-item__date">{{ page.event-date }}</div>
 	    </a>
 	  </div>
 	{% endfor %}
