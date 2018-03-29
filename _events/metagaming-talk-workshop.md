@@ -1,5 +1,5 @@
 ---
-layout: event
+layout: events
 title: Metagaming Talk + Workshop
 date: April 26, 2018
 time: All Day
