@@ -3,3 +3,10 @@ layout: no-header
 title: Flexible Navigation
 permalink: /flexible-nav/
 ---
+
+
+<!-- page content to show with menu: -->
+{% assign fellows = site.pages | where_exp: "item", "item.title == 'Fellowship Layout'" %}
+{% for page in fellows %}
+	{{ page.content }}
+{% endfor %}
