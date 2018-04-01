@@ -2,8 +2,8 @@
 layout: post
 title: World
 categories:
-	- modest proposal
-	- flexible navigation
+- modest proposal
+- flexible navigation
 ---
 
 There is likewise another great advantage in my scheme, that it will prevent those voluntary abortions, and that horrid practice of women murdering their bastard children, alas! too frequent among us! sacrificing the poor innocent babes I doubt more to avoid the expense than the shame, which would move tears and pity in the most savage and inhuman breast.

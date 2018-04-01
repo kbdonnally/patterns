@@ -2,8 +2,8 @@
 layout: post
 title: Science & Health
 categories:
-	- modest proposal
-	- flexible navigation
+- modest proposal
+- flexible navigation
 ---
 
 I have reckoned upon a medium that a child just born will weigh 12 pounds, and in a solar year, if tolerably nursed, increaseth to 28 pounds.

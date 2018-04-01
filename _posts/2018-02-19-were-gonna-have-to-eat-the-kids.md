@@ -2,8 +2,8 @@
 layout: post
 title: Culture
 categories:
-	- modest proposal
-	- flexible navigation
+- modest proposal
+- flexible navigation
 ---
 
 I am assured by our merchants, that a boy or a girl before twelve years old is no salable commodity; and even when they come to this age they will not yield above three pounds, or three pounds and half-a-crown at most on the exchange; which cannot turn to account either to the parents or kingdom, the charge of nutriment and rags having been at least four times that value.

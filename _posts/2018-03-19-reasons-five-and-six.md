@@ -2,8 +2,8 @@
 layout: post
 title: Business & Finance
 categories:
-	- modest proposal
-	- flexible navigation
+- modest proposal
+- flexible navigation
 ---
 
 Fifthly, This food would likewise bring great custom to taverns; where the vintners will certainly be so prudent as to procure the best receipts for dressing it to perfection, and consequently have their houses frequented by all the fine gentlemen, who justly value themselves upon their knowledge in good eating: and a skilful cook, who understands how to oblige his guests, will contrive to make it as expensive as they please.

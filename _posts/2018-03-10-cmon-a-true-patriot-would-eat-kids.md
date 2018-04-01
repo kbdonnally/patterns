@@ -2,8 +2,8 @@
 layout: post
 title: Identities
 categories:
-	- modest proposal
-	- flexible navigation
+- modest proposal
+- flexible navigation
 ---
 
 Those who are more thrifty (as I must confess the times require) may flay the carcass; the skin of which artificially dressed will make admirable gloves for ladies, and summer boots for fine gentlemen.

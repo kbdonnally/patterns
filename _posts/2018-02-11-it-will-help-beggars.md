@@ -2,8 +2,8 @@
 layout: post
 title: Politics & Policy
 categories:
-	- modest proposal
-	- flexible navigation
+- modest proposal
+- flexible navigation
 ---
 
 But my intention is very far from being confined to provide only for the children of professed beggars; it is of a much greater extent, and shall take in the whole number of infants at a certain age who are born of parents in effect as little able to support them as those who demand our charity in the streets.

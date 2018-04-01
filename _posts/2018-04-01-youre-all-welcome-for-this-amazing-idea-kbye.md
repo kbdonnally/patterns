@@ -2,8 +2,8 @@
 layout: post
 title: Podcasts
 categories:
-	- modest proposal
-	- flexible navigation
+- modest proposal
+- flexible navigation
 ---
 
 Therefore I repeat, let no man talk to me of these and the like expedients, 'till he hath at least some glympse of hope, that there will ever be some hearty and sincere attempt to put them into practice.

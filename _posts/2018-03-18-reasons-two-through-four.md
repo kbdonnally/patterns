@@ -2,8 +2,8 @@
 layout: post
 title: Technology
 categories:
-	- modest proposal
-	- flexible navigation
+- modest proposal
+- flexible navigation
 ---
 
 Secondly, The poorer tenants will have something valuable of their own, which by law may be made liable to distress and help to pay their landlord's rent, their corn and cattle being already seized, and money a thing unknown.
