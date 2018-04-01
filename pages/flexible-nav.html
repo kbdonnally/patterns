@@ -4,6 +4,14 @@ title: Flexible Navigation
 permalink: /flexible-nav/
 ---
 
+<div class="flexnav-wrapper">
+	<ul class="flexnav-main-content">
+	{% for post in site.posts %}
+		<li class="flexnav__item"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+	{% endfor %}
+	</ul>
+</div>
+
 
 <!-- page content to show with menu: -->
 {% assign fellows = site.pages | where_exp: "item", "item.title == 'Fellowship Layout'" %}
