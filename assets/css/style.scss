@@ -1,17 +1,6 @@
 ---
 ---
 
-@import "sections";
-@import "footer";
-@import "item";
-@import "text";
-@import "fellowship";
-@import "gallery";
-@import "collection";
-@import "research";
-@import "navbar";
-@import "flexible-nav";
-
 /* Universal Styles: */
 
 * {
@@ -25,3 +14,21 @@ body {
 	font-size: 1em;
 	line-height: 1.5; // if 16px, = 24px line height
 }
+
+main {
+	padding-top: 60px;
+}
+
+/* Partials: */
+
+@import "page";
+@import "sections";
+@import "footer";
+@import "item";
+@import "text";
+@import "fellowship";
+@import "gallery";
+@import "collection";
+@import "research";
+@import "navbar";
+@import "flexible-nav";
