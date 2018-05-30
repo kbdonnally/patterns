@@ -111,7 +111,6 @@
 	}
 	// # block quotes
 	blockquote {
-		color: rgba(0,0,0,.5);
 		margin: 1em;
 		margin-left: 0;
 		padding-left: calc(1.5em - 2px);
@@ -123,6 +122,7 @@
 	// # code
 	code {
 		font-family: "Inconsolata", monospace !important;
+		white-space: pre-wrap;
 	}
 	pre {
 		max-width: 100%;
@@ -166,6 +166,13 @@
 				font-weight: 400;
 				line-height: 22px;
 				text-align: center;
+			}
+			ul {
+				li {
+					&::before {
+						content: '';
+					}
+				}
 			}
 			@media screen and (min-width: 768px) {
 				&::before {
