@@ -21,6 +21,8 @@ main {
 
 /* Partials: */
 
+@import "universal-styles";
+@import "home";
 @import "page";
 @import "sections";
 @import "footer";
