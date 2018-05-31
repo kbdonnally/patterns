@@ -13,16 +13,25 @@ html, body {
 /* ## Main styles: */
 
 .v2-wrapper {
-
+	position: relative;
+	margin-top: -60px;
+	@media screen and (min-width: 768px) {
+		font-size: 1.125rem; // 18px
+	}
 }
 
 /* # Landing: */
 
 .v2-landing-wrapper {
-
+	position: relative;
 }
 
 .v2-landing__big-title {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	padding: 0 4.167%;
+	background-color: #222;
 
 }
 
@@ -41,7 +50,8 @@ html, body {
 /* # Main content: */
 
 .v2-main-content {
-
+	position: relative;
+	padding: 0 4.167%;
 }
 
 /* FAQ: */
