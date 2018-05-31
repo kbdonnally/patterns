@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include navbar-2.html -%}
+
+    <main id="main" role="main">
+      {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+
+    <script src="{{ '/assets/js/lib/hammer.min.js' | relative_url }}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ '/assets/js/lib/prism.min.js' | relative_url }}" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ '/assets/js/main.js' | relative_url }}" type="text/javascript" charset="utf-8"></script>
+
+  </body>
+
+</html>
