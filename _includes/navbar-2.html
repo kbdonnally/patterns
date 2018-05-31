@@ -1,28 +1,13 @@
 <div class="flexnav-wrapper--2">
-	<div class="flexnav-main-grid--2">
-
+	<div class="flexnav-main--2">
 		<div class="flexnav__home-icon">
-			<a href="{{ site.url }}" aria-label="Scholars' Lab home"><img src="{{ '/assets/img/svg/asterisk-white.svg' | relative_url }}" alt="SLab logo"></a>
+			<a href="{{ site.url }}" aria-label="Scholars' Lab home"><img src="{{ '/assets/img/svg/8bit-beaker.svg' | relative_url }}" alt="Beaker by Cuby Design for the Noun Project" title="Courtesy of Cuby Design"></a>
 		</div>
 
 		<ul class="flexnav-main-grid">
-		{% assign pages = site.pages %}
-		{% for page in pages %}
-		{% if page.layout != nil and page.title %}
-			<li class="flexnav__item"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title | replace: ' and ', ' &amp; ' }}</a></li>
-		{% endif %}
-		{% endfor %}
-			<li class="flexnav__more-menu">
-				<div class="flexnav-more__prompt" aria-label="More menu items">More &nbsp;<span>&rsaquo;</span></div>
-				<ul class="flexnav-more__wrapper">
-				{% for page in pages %}
-				{% if page.layout != nil and page.title %}
-					<li class="flexnav-more__item"><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title | replace: ' and ', ' &amp; ' }}</a></li>
-				{% endif %}
-				{% endfor %}
-				</ul>
-			</li>
+			<li class="flexnav__item"><a href="{{ site.baseurl }}">Projects</a></li>
+			<li class="flexnav__item"><a href="{{ site.baseurl }}">Blog</a></li>
+			<li class="flexnav__item"><a href="{{ site.baseurl }}">About Us</a></li>
 		</ul>
-
 	</div> <!-- end content -->
 </div> <!-- end wrapper -->
