@@ -48,7 +48,7 @@ def classesToCSS(class_names):
 pattern = r'class=".*?"'
 
 # list of all 'class="<val>"' in file
-matches = regexTextSearch('../pages/text.html', pattern)
+matches = regexTextSearch('../_homepages/version-2.html', pattern)
 
 # list of all val for 'class="<val>"' in matches
 class_names = stripClassStrings(matches)

@@ -16,12 +16,9 @@
 	left: 0;
 	height: 60px;
 	width: 100%;
-	padding: 0 4.167%;
+	padding: 0 1em;
 	background-color: black;
 	z-index: 5;
-	a {
-		text-transform: uppercase;
-	}
 }
 
 .navbar-main-grid {
@@ -34,10 +31,6 @@
 	align-self: center;
 	a {
 		display: block;
-		border-bottom: none !important;
-		&:hover, &:focus {
-			background-color: transparent !important;
-		}
 		img {
 			display: block;
 			height: 40px;
@@ -52,7 +45,7 @@
 	list-style-type: none;
 	li {
 		display: inline-block;
-		padding-right: 2em;
+		padding-right: 1em;
 		a {
 			display: block;
 		}

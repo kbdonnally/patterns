@@ -1,0 +1,270 @@
+/* Homepage, Version 2 */
+
+html, body {
+	background-color: white;
+}
+/* ## Universal styles: */
+
+[class*="v2-"][class*="__title"] {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+/* ## Main styles: */
+
+.v2-wrapper {
+	position: relative;
+	margin-top: -60px;
+	@media screen and (min-width: 768px) {
+		font-size: 1.125rem; // 18px
+	}
+}
+
+/* # Landing: */
+
+.v2-landing-wrapper {
+	position: relative;
+}
+
+.v2-landing__big-title {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	padding: 0 4.167%;
+	background-color: #222;
+}
+
+.v2-title__text {
+	position: relative;
+	display: grid;
+	height: 100vh;
+	width: 100%;
+	align-items: center;
+	font-size: 3em;
+	font-weight: 900;
+	line-height: 1;
+	text-transform: uppercase;
+	color: white; //black;
+	background-color: black; // white;
+	mix-blend-mode: lighten; //multiply;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: lightblue;
+		background-image: linear-gradient(rgba(255,255,255,.1), rgba(255,255,255,.1)), url('../img/decorative/color-splatter-purple.jpg');
+		background-size: cover;
+		mix-blend-mode: multiply;
+	}
+	span {
+		display: inline-block;
+	}
+	@media screen and (min-width: 768px) {
+		font-size: 4em;
+	}
+	@media screen and (min-width: 1200px) {
+	//	font-size: 5em;
+	}
+}
+
+.v2-landing__hero-text {
+	
+}
+
+.v2-hero__hook {
+
+}
+
+.v2-hero__description {
+
+}
+
+/* # Main content: */
+
+.v2-main-content {
+	position: relative;
+	padding: 0 4.167%;
+}
+
+/* FAQ: */
+
+.v2__faq {
+
+}
+
+.v2-faq__title {
+
+}
+
+.v2-faq__questions {
+
+}
+
+.v2-faq__charter {
+
+}
+
+.v2-charter__title {
+
+}
+
+.v2-charter__content {
+
+}
+
+.v2-faq__people {
+
+}
+
+.v2-people__title {
+
+}
+
+.v2-people__content {
+
+}
+
+.v2-faq__cta {
+
+}
+
+/* Contact us: */
+
+.v2__contact {
+
+}
+
+.v2-contact__title {
+
+}
+
+.v2-contact__newsletter {
+
+}
+
+.v2-news__text {
+
+}
+
+.v2-news__prompt {
+
+}
+
+.v2-listserv__input {
+
+}
+
+.v2-listserv__btn {
+
+}
+
+.v2-contact__email {
+
+}
+
+.v2-contact__consult {
+
+}
+
+/* Find us: */
+
+.v2__find-us {
+
+}
+
+.v2-find__title {
+
+}
+
+.v2-find__diagram {
+
+}
+
+/* Events: */
+
+.v2__events {
+
+}
+
+.v2-events__title {
+
+}
+
+.v2-events__upcoming {
+
+}
+
+/* Open office hours: */
+
+.v2__office-hours {
+
+}
+
+.v2-hours__title {
+
+}
+
+.v2-hours__when {
+
+}
+
+.v2-hours__info {
+
+}
+
+/* Student Opportunities: */
+
+.v2__student-opps {
+
+}
+
+.v2-student__title {
+
+}
+
+.v2-student__content {
+
+}
+
+.v2-student__cta {
+
+}
+
+/* Makerspace: */
+
+.v2__makerspace {
+
+}
+
+.v2-maker__title {
+
+}
+
+.v2-maker__hours {
+
+}
+
+.v2-maker__text {
+
+}
+
+.v2-maker__cta {
+
+}
+
+/* Spatial Tech: */
+
+.v2__spatial-tech {
+
+}
+
+.v2-spatial__title {
+
+}
+
+.v2-spatial__text {
+
+}
