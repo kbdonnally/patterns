@@ -32,7 +32,6 @@ sass:
   style: expanded # temporary! change back to compressed later
 plugins:
   - jekyll-feed
-  - jekyll-sitemap
 exclude:
   - Gemfile
   - Gemfile.lock
