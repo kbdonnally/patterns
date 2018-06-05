@@ -10,6 +10,13 @@ html, body {
 	font-weight: bold;
 }
 
+[class*="v2__"] {
+	position: relative;
+	margin: 1em;
+	padding: 1em;
+	border: 1px solid black;
+}
+
 /* ## Main styles: */
 
 .v2-wrapper {
