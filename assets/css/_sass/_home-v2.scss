@@ -86,13 +86,31 @@ html, body {
 
 .v2-main-content {
 	position: relative;
+	display: grid;
+	grid-template-areas: "faq"
+						 "contact"
+						 "find"
+						 "events"
+						 "hours"
+						 "students"
+						 "maker"
+						 "spatial";
 	padding: 0 4.167%;
+	@media screen and (min-width: 1024px) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "faq faq"
+							 "contact contact"
+							 "events find"
+							 "events hours"
+							 "students students"
+							 "spatial maker";
+	}
 }
 
 /* FAQ: */
 
 .v2__faq {
-
+	grid-area: faq;
 }
 
 .v2-faq__title {
@@ -134,7 +152,7 @@ html, body {
 /* Contact us: */
 
 .v2__contact {
-
+	grid-area: contact;
 }
 
 .v2-contact__title {
@@ -172,7 +190,7 @@ html, body {
 /* Find us: */
 
 .v2__find-us {
-
+	grid-area: find;
 }
 
 .v2-find__title {
@@ -186,7 +204,7 @@ html, body {
 /* Events: */
 
 .v2__events {
-
+	grid-area: events;
 }
 
 .v2-events__title {
@@ -200,7 +218,7 @@ html, body {
 /* Open office hours: */
 
 .v2__office-hours {
-
+	grid-area: hours;
 }
 
 .v2-hours__title {
@@ -218,7 +236,7 @@ html, body {
 /* Student Opportunities: */
 
 .v2__student-opps {
-
+	grid-area: students;
 }
 
 .v2-student__title {
@@ -236,7 +254,7 @@ html, body {
 /* Makerspace: */
 
 .v2__makerspace {
-
+	grid-area: maker;
 }
 
 .v2-maker__title {
@@ -258,7 +276,7 @@ html, body {
 /* Spatial Tech: */
 
 .v2__spatial-tech {
-
+	grid-area: spatial;
 }
 
 .v2-spatial__title {
