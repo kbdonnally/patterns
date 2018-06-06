@@ -313,7 +313,27 @@ html, body {
 }
 
 .v2-maker__hours {
-
+	position: relative;
+	border: 4px solid #FFBFB7; // $royalpurplebright;
+	font-family: "base-mono-narrow", monospace;
+	font-size: 20px;
+	text-align: right;
+	margin-top: calc(2em + 4px);
+	padding: .5em 1em;
+	div {
+		position: absolute;
+		font-family: "Oswald", sans-serif;
+		font-size: 1.5rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: left;
+		line-height: 1;
+		transform: translate(-1em, calc(-1.5em - 4px));
+	}
+	span {
+		float: left;
+		color: #FFBFB7; // $royalpurplebright;
+	}
 }
 
 .v2-maker__text {
