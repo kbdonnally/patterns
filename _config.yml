@@ -26,6 +26,7 @@ github_username:  kbdonnally
 permalink: /:year/:month/:day/:title/
 
 # Build settings
+incremental: true
 markdown: kramdown
 sass:
   sass_dir: assets/css/_sass
@@ -35,9 +36,10 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
   - testing
   - docs
-  - python
+  - assets/python
 collections:
   research:
     output: true
