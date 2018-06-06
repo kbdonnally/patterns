@@ -268,18 +268,38 @@ html, body {
 
 .v2__student-opps {
 	grid-area: students;
+	position: relative;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	max-width: 100%;
+}
+
+.v2-student__content {
+	
 }
 
 .v2-student__title {
 
 }
 
-.v2-student__content {
+.v2-student__text {
+	display: inline-block;
+	p {
 
+	}
+}
+
+.v2-student__img {
+	position: relative;
+	background-image: url('../img/makerspace/doge-print.jpg');
+	background-size: 150%;
+	background-position: left bottom;
 }
 
 .v2-student__cta {
-
+	position: absolute;
+	bottom: 0;
+	left: 0;
 }
 
 /* Makerspace: */
