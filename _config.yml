@@ -35,6 +35,9 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - gulpfile.js
+  - package.json
+  - node_modules
   - testing
   - docs
   - python
