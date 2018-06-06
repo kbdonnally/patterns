@@ -103,6 +103,7 @@ html, body {
 						 "maker"
 						 "spatial";
 	padding: 0 4.167%;
+	color: $textgray;
 	@media screen and (min-width: 1024px) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas: "faq faq"
