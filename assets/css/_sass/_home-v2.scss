@@ -167,6 +167,15 @@ html, body {
 
 }
 
+.v2-contact__wrapper {
+	position: relative;
+	display: flex;
+}
+
+.v2-contact__content {
+
+}
+
 .v2-contact__newsletter {
 
 }
@@ -205,6 +214,11 @@ html, body {
 
 }
 
+.v2-find__content {
+	position: relative;
+	display: flex;
+}
+
 .v2-find__diagram {
 
 }
@@ -220,7 +234,9 @@ html, body {
 }
 
 .v2-events__upcoming {
-
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
 }
 
 /* Open office hours: */
