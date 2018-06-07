@@ -7,4 +7,10 @@ function square(x,y) {
 	return x*y;
 }
 
-var longNameOfVariable;
+var longNameOfVariable = 'seventy';
+
+function nowIGotItToWork(yay) {
+	return yay;
+}
+
+console.log('hi');

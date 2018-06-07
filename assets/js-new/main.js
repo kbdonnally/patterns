@@ -1,1 +1,1 @@
-var longNameOfVariable,gulpTest="Will this break gulp? Probably not; I'm guessing it'll overwrite.";function square(x,y){return x*y}console.log(gulpTest);var nav=[1,2,3];
+function hellYeahBabyItsWorking(){return"WHASSSUPPPP"}var gulpTest="Will this break gulp? Probably not; I'm guessing it'll overwrite.";function square(x,y){return x*y}console.log(gulpTest);var longNameOfVariable="seventy";function nowIGotItToWork(yay){return yay}console.log("hi");var nav=[1,2,3];
