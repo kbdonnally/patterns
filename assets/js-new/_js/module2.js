@@ -6,3 +6,5 @@ console.log(gulpTest);
 function square(x,y) {
 	return x*y;
 }
+
+var longNameOfVariable;

@@ -14,12 +14,13 @@ var autoprefixer = require('gulp-autoprefixer'),
 var src_js = './assets/js-new/_js/*.js';
 var dest_js = './assets/js-new';
 
-var js = () => {
+var format_js = () => {
 	return gulp.src(src_js)
 		.pipe(concat('main.js'))
+		.pipe(uglify({mangle:false}))
 		.pipe(gulp.dest(dest_js));
 };
 
 gulp.task('watch_js', () => {
-	return gulp.watch(src_js, js);
+	return gulp.watch(src_js, format_js);
 });
