@@ -3,6 +3,7 @@ var gulp 		 = require('gulp');
 
 // plugins:
 var autoprefixer = require('gulp-autoprefixer'),
+	clean		 = require('gulp-clean'),
 	concat 		 = require('gulp-concat'),
 	csso 		 = require('gulp-csso'),
 	htmlmin 	 = require('gulp-htmlmin'),
