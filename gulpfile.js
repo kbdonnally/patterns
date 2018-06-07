@@ -1,21 +1,18 @@
-// fetch module
-var gulp 	 = require('gulp'),
-	concat 	 = require('gulp-concat'),
-	prefixer = require('gulp-autoprefixer');
+// requirements:
+var gulp 		 = require('gulp');
 
-// files to read, where to write them
-var testFiles = './assets/css/_sass/*.scss',
-	outputDir = './testing/gulp-output/concat';
+// plugins:
+var autoprefixer = require('gulp-autoprefixer'),
+	concat 		 = require('gulp-concat'),
+	csso 		 = require('gulp-csso'),
+	htmlmin 	 = require('gulp-htmlmin'),
+	sass 		 = require('gulp-sass'),
+	uglify 		 = require('gulp-uglify'); 
 
-// example: put all scss in 1 file
-gulp.task('concat-scss', () => {
-	return gulp.src(testFiles)
-		.pipe(concat('style.scss'))
-		.pipe(gulp.dest(outputDir));
-});
+// tasks:
 
-var watch = gulp.task('watch', () => {
-	return gulp.watch(testFiles, ['concat-scss']);
-})
+var src_js = './assets/js-new/_js/*.js';
+var dest_js = './assets/js-new';
 
-gulp.task('default', gulp.parallel('concat-scss', 'watch'));
+
+
