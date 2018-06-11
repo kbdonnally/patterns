@@ -881,6 +881,10 @@ html, body {
   border: 1px solid black;
 }
 
+a[class*="v2-"] {
+  color: black;
+}
+
 /* ## Main styles: */
 .v2-wrapper {
   position: relative;
