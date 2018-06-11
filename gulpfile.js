@@ -40,14 +40,14 @@ gulp.task('js', gulp.series('clean_js', 'watch_js'));
 // css:
 
 
-gulp.task('format_css', () => {
+var format_css = () => {
 	return gulp.src('_site/assets/css/style.css')
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
 			grid: true
 		}))
 		.pipe(gulp.dest('testing/gulp-output/css'));
-});
+};
 
 gulp.task('watch_css', () => {
 	return gulp.watch('_site/assets/css/style.css', format_css);
