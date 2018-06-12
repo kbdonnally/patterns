@@ -35,10 +35,11 @@ html, body {
 
 .v2-landing__big-title {
 	position: relative;
-	height: 100vh;
+	height: calc(100vh + 1px);
 	width: 100%;
 	padding: 0 4.167%;
-	background-color: #222;
+	background-color: $navgray;
+//	border-bottom: 1px dotted rgba(255,255,255,.5);
 }
 
 .v2-title__text {
@@ -51,9 +52,9 @@ html, body {
 	font-weight: 900;
 	line-height: 1;
 	text-transform: uppercase;
-	color: white; //black;
-	background-color: black; // white;
-	mix-blend-mode: lighten; //multiply;
+	color: white;
+	background-color: black;
+	mix-blend-mode: lighten;
 	&::before {
 		content: '';
 		position: absolute;
@@ -71,6 +72,7 @@ html, body {
 	}
 	@media screen and (min-width: 768px) {
 		font-size: 4em;
+	//	padding-left: 2.25rem;
 	}
 	@media screen and (min-width: 1200px) {
 	//	font-size: 5em;
