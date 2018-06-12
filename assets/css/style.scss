@@ -21,6 +21,8 @@ main {
 
 /* Partials: */
 
+@import "_colors/patterns-palette";
+@import "_colors/slab-palette";
 @import "universal-styles";
 @import "page";
 @import "home-original";
