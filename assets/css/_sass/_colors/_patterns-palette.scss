@@ -8,10 +8,8 @@ $medslateblue: hsla(245%, 91%, 74%, 1);
 $raisinblack: hsla(270%, 3%, 14%, 1);
 
 /* RGB */
-$hanpurple: rgba(99, 32, 238, 1);
-$queenpink: rgba(237, 210, 224, 1);
-$mayablue: rgba(108, 212, 255, 1);
-$medslateblue: rgba(139, 128, 249, 1);
-$raisinblack: rgba(36, 35, 37, 1);
-
-@import "_slab-palette";
+$rgb-hanpurple: rgba(99, 32, 238, 1);
+$rgb-queenpink: rgba(237, 210, 224, 1);
+$rgb-mayablue: rgba(108, 212, 255, 1);
+$rgb-medslateblue: rgba(139, 128, 249, 1);
+$rgb-raisinblack: rgba(36, 35, 37, 1);
